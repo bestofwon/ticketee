@@ -1,4 +1,4 @@
-Given(/^(?:|I )am on the homepage$/) do 
+Given(/^I am on the homepage$/) do 
 	visit root_url
 end
 
@@ -18,3 +18,14 @@ end
 Then(/^I should see "(.*?)"$/) do |notice|
 	page.should have_content(notice)
 end
+
+
+# When (/^I press "Create Project"$/) do
+# 	pending
+# end
+# Then (/^I should see "Project has not been created."$/) do
+# 	pending
+# end
+# Then (/^I should see "Name can't be blank"$/) do
+# 	pending
+# end
