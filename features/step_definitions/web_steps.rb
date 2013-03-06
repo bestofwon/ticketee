@@ -1,5 +1,9 @@
-Given(/^I am on the homepage$/) do 
-	visit root_url
+Given(/^I am on the (.*?)$/) do |page_name|
+	case page_name
+	when /home\s?page/
+		path_to = '/' 
+	visit path_to
+	end
 end
 
 When(/^I follow "New Project"$/) do 
